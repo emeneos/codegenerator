@@ -3,8 +3,8 @@
 
 #include "mex.h"
 /*#include <D:/uvalladolid/DMRIMatlab/mexcode/mathsmex/>*/
-#include "D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\sphericalHarmonics.h"
-#include "D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\mexToMathsTypes.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/mexToMathsTypes.h"
 
 /* The gateway function */
 void mexGenerateSHMatrix(int nlhs, mxArray *plhs[],

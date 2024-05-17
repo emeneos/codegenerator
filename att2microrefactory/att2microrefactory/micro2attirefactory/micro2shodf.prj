@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2023a">
-  <configuration file="D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory\micro2shodf.prj" location="D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory" name="micro2shodf" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration file="/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory/micro2shodf.prj" location="/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory" name="micro2shodf" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -303,7 +303,7 @@
       <param.HardwareSizeChar.Production>8</param.HardwareSizeChar.Production>
       <param.HardwareSizeShort.Production>16</param.HardwareSizeShort.Production>
       <param.HardwareSizeInt.Production>32</param.HardwareSizeInt.Production>
-      <param.HardwareSizeLong.Production>32</param.HardwareSizeLong.Production>
+      <param.HardwareSizeLong.Production>64</param.HardwareSizeLong.Production>
       <param.HardwareSizeLongLong.Production>64</param.HardwareSizeLongLong.Production>
       <param.HardwareSizeFloat.Production>32</param.HardwareSizeFloat.Production>
       <param.HardwareSizeDouble.Production>64</param.HardwareSizeDouble.Production>
@@ -324,7 +324,7 @@
       <param.HardwareSizeChar.Target>8</param.HardwareSizeChar.Target>
       <param.HardwareSizeShort.Target>16</param.HardwareSizeShort.Target>
       <param.HardwareSizeInt.Target>32</param.HardwareSizeInt.Target>
-      <param.HardwareSizeLong.Target>32</param.HardwareSizeLong.Target>
+      <param.HardwareSizeLong.Target>64</param.HardwareSizeLong.Target>
       <param.HardwareSizeLongLong.Target>64</param.HardwareSizeLongLong.Target>
       <param.HardwareSizeFloat.Target>32</param.HardwareSizeFloat.Target>
       <param.HardwareSizeDouble.Target>64</param.HardwareSizeDouble.Target>
@@ -518,7 +518,6 @@
         <param.HardwareSizeChar.Production />
         <param.HardwareSizeShort.Production />
         <param.HardwareSizeInt.Production />
-        <param.HardwareSizeLong.Production />
         <param.HardwareSizeLongLong.Production />
         <param.HardwareSizeFloat.Production />
         <param.HardwareSizeDouble.Production />
@@ -526,13 +525,11 @@
         <param.HardwareAtomicIntegerSize.Production />
         <param.HardwareAtomicFloatSize.Production />
         <param.HardwareVendor.Target />
-        <param.HardwareType.Target />
         <param.HWDeviceType.Target />
         <var.instance.enabled.Target />
         <param.HardwareSizeChar.Target />
         <param.HardwareSizeShort.Target />
         <param.HardwareSizeInt.Target />
-        <param.HardwareSizeLong.Target />
         <param.HardwareSizeLongLong.Target />
         <param.HardwareSizeFloat.Target />
         <param.HardwareSizeDouble.Target />
@@ -600,7 +597,7 @@
     </param.TestSnippets>
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\micro2shodf\micro2shodf.lib</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/codegen/lib/micro2shodf/micro2shodf.a</param.outputfile>
     <param.version>R2012a</param.version>
     <param.HasECoderFeatures>false</param.HasECoderFeatures>
     <param.HasGpuCoder>false</param.HasGpuCoder>
@@ -620,18 +617,18 @@
     <var.MirrorOnOpen>false</var.MirrorOnOpen>
     <param.FixedPointEnabled>false</param.FixedPointEnabled>
     <var.redirectedInputTypeData />
-    <var.DismissScreener>true</var.DismissScreener>
+    <var.DismissScreener>false</var.DismissScreener>
     <param.unifiedParamStorage />
     <param.hdlParamStorage />
     <var.gc.lastOutputRoot />
     <var.gc.lastOutputType />
     <var.gc.preBuildChecksum />
-    <var.cfi.lastOutputRoot>codegen\mex\micro2shodf</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>2447428621</var.cfi.preBuildChecksum>
+    <var.cfi.lastOutputRoot>codegen/mex/micro2shodf</var.cfi.lastOutputRoot>
+    <var.cfi.preBuildChecksum>908967057</var.cfi.preBuildChecksum>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
     <var.lastUserSourceChecksum />
-    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory\GenerateSHEigMatrix.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory\maths\dmri_compute_convolution_weights_ODF.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory\micro2shodf.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\auto_detect_shells.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\compute_shodf_from_micro.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\dmri_sh_expand_coeffs.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\is_broadcast_available_test.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\use_parallel_test.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
-    <param.forceMexBuild>true</param.forceMexBuild>
+    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory/GenerateSHEigMatrix.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory/maths/dmri_compute_convolution_weights_ODF.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory/micro2shodf.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/auto_detect_shells.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/compute_shodf_from_micro.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/dmri_sh_expand_coeffs.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
+    <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
     <param.configImportActive>false</param.configImportActive>
     <var.isGpuCoder>false</var.isGpuCoder>
@@ -647,7 +644,7 @@
     <param.mex.outputfile>micro2shodf_mex</param.mex.outputfile>
     <param.grt.outputfile>micro2shodf</param.grt.outputfile>
     <param.artifact>option.target.artifact.lib</param.artifact>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\micro2shodf\micro2shodf.lib</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/codegen/lib/micro2shodf/micro2shodf.a</param.outputfile>
     <param.CppNamespace />
     <param.CppPackagesToNamespaces>true</param.CppPackagesToNamespaces>
     <param.CppNamespaceForMathworksCode>coder</param.CppNamespaceForMathworksCode>
@@ -680,8 +677,8 @@
     <param.deeplearning.DeepLearningCustomCallback />
     <param.deeplearning.TargetLib>option.deeplearning.targetlibrary.none</param.deeplearning.TargetLib>
     <var.cfiTargetLibSuppression>true</var.cfiTargetLibSuppression>
-    <var.hasMatlabDeepLearningSupportPackage>false</var.hasMatlabDeepLearningSupportPackage>
-    <var.hasGpuDeepLearningSupportPackage>false</var.hasGpuDeepLearningSupportPackage>
+    <var.hasMatlabDeepLearningSupportPackage>true</var.hasMatlabDeepLearningSupportPackage>
+    <var.hasGpuDeepLearningSupportPackage>true</var.hasGpuDeepLearningSupportPackage>
     <param.tensorrt.DataType>option.tensorrt.datatype.fp32</param.tensorrt.DataType>
     <param.tensorrt.DataPath />
     <param.tensorrt.NumCalibrationBatches>0</param.tensorrt.NumCalibrationBatches>
@@ -768,6 +765,7 @@
       <var.MirrorOnOpen />
       <param.FixedPointEnabled />
       <var.redirectedInputTypeData />
+      <var.DismissScreener />
       <param.unifiedParamStorage />
       <param.hdlParamStorage />
       <var.gc.lastOutputRoot />
@@ -775,6 +773,7 @@
       <var.gc.preBuildChecksum />
       <var.outdatedOnRestore />
       <var.lastUserSourceChecksum />
+      <param.forceMexBuild />
       <param.NoDefaultJIT />
       <param.configImportActive />
       <var.isGpuCoder />
@@ -819,6 +818,8 @@
       <param.deeplearning.EnableDeepLearning />
       <param.deeplearning.DeepLearningCustomCallback />
       <param.deeplearning.TargetLib />
+      <var.hasMatlabDeepLearningSupportPackage />
+      <var.hasGpuDeepLearningSupportPackage />
       <param.tensorrt.DataType />
       <param.tensorrt.DataPath />
       <param.tensorrt.NumCalibrationBatches />
@@ -882,15 +883,15 @@
       <param.FixedPointUseDesignRanges />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\micro2shodf.m">
-        <Marker>1709204777253</Marker>
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/micro2shodf.m">
+        <Marker>1715961161761</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench>
-      <file>${PROJECT_ROOT}\main.m</file>
+      <file>${PROJECT_ROOT}/main.m</file>
     </fileset.testbench>
     <fileset.inputtypes>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\micro2shodf.m">
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/micro2shodf.m">
         <Inputs fileName="micro2shodf.m" functionName="micro2shodf">
           <Input Name="atti" typeId="0" />
           <Input Name="gi" typeId="1" />
@@ -999,11 +1000,11 @@
       </file>
     </fileset.inputtypes>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\codegen\lib\micro2shodf" name="micro2shodf.lib" optional="false">D:\uvalladolid\matlab\labcode\att2microrefactory\micro2attirefactory\codegen\lib\micro2shodf\micro2shodf.lib</file>
+      <file location="${PROJECT_ROOT}/codegen/lib/micro2shodf" name="micro2shodf.a" optional="false">/media/sf_att2microrefactory/att2microrefactory/micro2attirefactory/codegen/lib/micro2shodf/micro2shodf.a</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023b</root>
+      <root>/usr/local/MATLAB/R2023b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
       </toolboxes>
@@ -1014,18 +1015,18 @@
       </toolbox>
     </matlab>
     <platform>
-      <unix>false</unix>
+      <unix>true</unix>
       <mac>false</mac>
-      <windows>true</windows>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
-      <linux>false</linux>
+      <linux>true</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>6.6.15-amd64</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>glnxa64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>

@@ -26,7 +26,7 @@ function e = dmri_compute_convolution_weights_ODF(bi,lpar,lperp,L)
 % -------------------------------------------------------------------------
 % Avoid repeated calls to is_broadcast_available, which will always return
 % the same value unless the toolbox is reconfigured:
-is_broadcast_available = is_broadcast_available_test;
+is_broadcast_available = true;
 % -------------------------------------------------------------------------
 N   = size(lpar,1);
 G   = size(bi,1);

@@ -15,8 +15,8 @@ function shc = compute_shodf_from_micro(atti,lpar,lperp,bs,gi,p,L,lambda,optimal
 %     optimal: 1 x 1 boolean
 
 % -------------------------------------------------------------------------
-is_broadcast_available = is_broadcast_available_test;
-use_parallel           = use_parallel_test;
+is_broadcast_available = true;
+use_parallel           = false;
 % -------------------------------------------------------------------------
 % Compute the convolution coefficients for the Funk-Hecke theorem:
 F   = dmri_compute_convolution_weights_ODF(bs,lpar,lperp,L); % Qx(L/2+1)xNs
@@ -72,8 +72,8 @@ if coder.target('MATLAB')
         WLS{n} = WLS{n}';                           % G_nx(K-1), for future convenience
     end
 else
-    coder.updateBuildInfo('addSourcePaths','D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments');
-    coder.cinclude('D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\sphericalHarmonics.h');
+    coder.updateBuildInfo('addSourcePaths','/media/sf_att2microrefactory/att2microrefactory/micro2moments');
+    coder.cinclude('/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h');
     coder.updateBuildInfo('addDefines', 'CODER');   
      for n=1:Ns
         test=gi(p{n},:);
@@ -180,7 +180,7 @@ end
 
 % -------------------------------------------------------------------------
 function shc = compute_odf_suboptimal( F, atti, B, p, WLS, ptr, Qc, K, Ns )
-is_broadcast_available = is_broadcast_available_test;
+is_broadcast_available = true;
 % ------------------------------------------
 sh  = zeros(Qc,K-1,Ns); % Qc x K-1 x Ns, SH coefficients at each shell
 % Compute the ODF suggested by each shell:

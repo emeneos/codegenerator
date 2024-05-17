@@ -93,6 +93,9 @@ if(nargin<6)
     error('At lest the atti volume, the gradient table, and the b-values, lpar, lperp, and f must be supplied');
 end
 [M,N,P,G] = size(atti);
+K = (opt.L+1)*(opt.L+2)/2; % Assuming opt.L is defined somewhere in your function
+sh = zeros(M, N, P, K);
+
 assert(ismatrix(gi),'gi must be a 2-d matlab matrix');
 assert(ismatrix(bi),'bi must be a 2-d matlab matrix');
 assert(size(gi,1)==G,'The number of rows in gi must match the 4-th dimension of atti');

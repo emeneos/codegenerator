@@ -19,13 +19,13 @@
 
 #include "mex.h"
 /*include <D:/uvalladolid/DMRIMatlab/mexcode/mathsmex/>*/
-#include "D:/uvalladolid/DMRIMatlab/mexcode/mathsmex/sphericalHarmonics.h"
-#include "D:/uvalladolid/DMRIMatlab/mexcode/mathsmex/mexToMathsTypes.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/mexToMathsTypes.h"
 #ifdef CODER 
 #include "mex.h"
-#include "D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\sphericalHarmonics.cpp"
-#include "D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\sphericalHarmonics.h"
-#include "D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\mexToMathsTypes.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.cpp"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h"
+#include "/media/sf_att2microrefactory/att2microrefactory/micro2moments/mexToMathsTypes.h"
 int generateSHMatrixx( double* plhs0, double* plhs1, const unsigned int L,  const double* Gi, const unsigned int G_ )
 {
     /* make sure the first argument is even */
