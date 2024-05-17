@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2023a">
-  <configuration file="D:\uvalladolid\matlab\labcode\att2microrefactory\atti2micro.prj" location="D:\uvalladolid\matlab\labcode\att2microrefactory" name="atti2micro" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration file="/media/sf_att2microrefactory/att2microrefactory/atti2micro.prj" location="/media/sf_att2microrefactory/att2microrefactory" name="atti2micro" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -303,7 +303,7 @@
       <param.HardwareSizeChar.Production>8</param.HardwareSizeChar.Production>
       <param.HardwareSizeShort.Production>16</param.HardwareSizeShort.Production>
       <param.HardwareSizeInt.Production>32</param.HardwareSizeInt.Production>
-      <param.HardwareSizeLong.Production>32</param.HardwareSizeLong.Production>
+      <param.HardwareSizeLong.Production>64</param.HardwareSizeLong.Production>
       <param.HardwareSizeLongLong.Production>64</param.HardwareSizeLongLong.Production>
       <param.HardwareSizeFloat.Production>32</param.HardwareSizeFloat.Production>
       <param.HardwareSizeDouble.Production>64</param.HardwareSizeDouble.Production>
@@ -324,7 +324,7 @@
       <param.HardwareSizeChar.Target>8</param.HardwareSizeChar.Target>
       <param.HardwareSizeShort.Target>16</param.HardwareSizeShort.Target>
       <param.HardwareSizeInt.Target>32</param.HardwareSizeInt.Target>
-      <param.HardwareSizeLong.Target>32</param.HardwareSizeLong.Target>
+      <param.HardwareSizeLong.Target>64</param.HardwareSizeLong.Target>
       <param.HardwareSizeLongLong.Target>64</param.HardwareSizeLongLong.Target>
       <param.HardwareSizeFloat.Target>32</param.HardwareSizeFloat.Target>
       <param.HardwareSizeDouble.Target>64</param.HardwareSizeDouble.Target>
@@ -518,7 +518,6 @@
         <param.HardwareSizeChar.Production />
         <param.HardwareSizeShort.Production />
         <param.HardwareSizeInt.Production />
-        <param.HardwareSizeLong.Production />
         <param.HardwareSizeLongLong.Production />
         <param.HardwareSizeFloat.Production />
         <param.HardwareSizeDouble.Production />
@@ -532,7 +531,6 @@
         <param.HardwareSizeChar.Target />
         <param.HardwareSizeShort.Target />
         <param.HardwareSizeInt.Target />
-        <param.HardwareSizeLong.Target />
         <param.HardwareSizeLongLong.Target />
         <param.HardwareSizeFloat.Target />
         <param.HardwareSizeDouble.Target />
@@ -600,7 +598,7 @@
     </param.TestSnippets>
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\atti2micro\atti2micro.lib</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/codegen/lib/atti2micro/atti2micro.a</param.outputfile>
     <param.version>R2012a</param.version>
     <param.HasECoderFeatures>false</param.HasECoderFeatures>
     <param.HasGpuCoder>false</param.HasGpuCoder>
@@ -626,11 +624,11 @@
     <var.gc.lastOutputRoot />
     <var.gc.lastOutputType />
     <var.gc.preBuildChecksum />
-    <var.cfi.lastOutputRoot>codegen\mex\atti2micro</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>1021290195</var.cfi.preBuildChecksum>
+    <var.cfi.lastOutputRoot>codegen/mex/atti2micro</var.cfi.lastOutputRoot>
+    <var.cfi.preBuildChecksum>3183583044</var.cfi.preBuildChecksum>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
     <var.lastUserSourceChecksum />
-    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\atti2micro.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\GenerateSHEigMatrix.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\auto_detect_shells.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\compute_lambdas_from_E.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\compute_lambdas_from_E_chunk.m&lt;/file&gt;&lt;file&gt;D:\uvalladolid\matlab\labcode\att2microrefactory\utils\experimental\compute_lambda_perp_from_E.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
+    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/GenerateSHEigMatrix.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/atti2micro.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/micro2moments/experimental/compute_lambda_perp_from_E.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/auto_detect_shells.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/compute_lambdas_from_E.m&lt;/file&gt;&lt;file&gt;/media/sf_att2microrefactory/att2microrefactory/utils/compute_lambdas_from_E_chunk.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
     <param.configImportActive>false</param.configImportActive>
@@ -647,7 +645,7 @@
     <param.mex.outputfile>atti2micro_mex</param.mex.outputfile>
     <param.grt.outputfile>atti2micro</param.grt.outputfile>
     <param.artifact>option.target.artifact.lib</param.artifact>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\atti2micro\atti2micro.lib</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/codegen/lib/atti2micro/atti2micro.a</param.outputfile>
     <param.CppNamespace />
     <param.CppPackagesToNamespaces>true</param.CppPackagesToNamespaces>
     <param.CppNamespaceForMathworksCode>coder</param.CppNamespaceForMathworksCode>
@@ -885,15 +883,15 @@
       <param.FixedPointUseDesignRanges />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\atti2micro.m">
-        <Marker>1709125144464</Marker>
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/atti2micro.m">
+        <Marker>1715964602831</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench>
-      <file>${PROJECT_ROOT}\main.m</file>
+      <file>${PROJECT_ROOT}/main.m</file>
     </fileset.testbench>
     <fileset.inputtypes>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\atti2micro.m">
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/atti2micro.m">
         <Inputs fileName="atti2micro.m" functionName="atti2micro">
           <Input Name="atti" typeId="0" />
           <Input Name="gi" typeId="1" />
@@ -999,11 +997,11 @@
       </file>
     </fileset.inputtypes>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\codegen\lib\atti2micro" name="atti2micro.lib" optional="false">D:\uvalladolid\matlab\labcode\att2microrefactory\codegen\lib\atti2micro\atti2micro.lib</file>
+      <file location="${PROJECT_ROOT}/codegen/lib/atti2micro" name="atti2micro.a" optional="false">/media/sf_att2microrefactory/att2microrefactory/codegen/lib/atti2micro/atti2micro.a</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023b</root>
+      <root>/usr/local/MATLAB/R2023b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
       </toolboxes>
@@ -1014,18 +1012,18 @@
       </toolbox>
     </matlab>
     <platform>
-      <unix>false</unix>
+      <unix>true</unix>
       <mac>false</mac>
-      <windows>true</windows>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
-      <linux>false</linux>
+      <linux>true</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>6.6.15-amd64</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>glnxa64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>

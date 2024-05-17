@@ -5,20 +5,20 @@ function build(target)
     entryPoint = 'atti2micro';
 
 
+   %% Configuration for generating C++ code as a DLL
     cfg = coder.config(target);
-
     cfg.TargetLang = 'C++';
-
-    cfg.CustomSource = ['mexGenerateSHMatrix.cpp']; %using code from the function mexGenerateSHMatrix.cpp
-
-    cfg.CustomInclude='D:\uvalladolid\DMRIMatlab\mexcode\mathsmex'; %adding path where the code from above is
-
-    
-    cfg.CustomSourceCode = ['#include "mexGenerateSHMatrix.h"']; %you need a header 
-    
-   
     cfg.GenerateReport = true;
     cfg.LaunchReport = false;
+    
+   
+    % Correct usage for CustomInclude and CustomSource with String Arrays
+    cfg.CustomInclude = ["/media/sf_att2microrefactory/att2microrefactory/micro2moments"];
+    cfg.CustomSource = ["threadHelper.cpp", "dmri_2F1cplus.cpp", "hyperGeom2F1.cpp", "generateSHMatrix.cpp", "sh2hot.cxx", "sphericalHarmonics.cpp"];
+    
+    cfg.CustomSourceCode = ['#include "generateSHMatrix.h"'];
+
+
 
        
     load test_data.mat;

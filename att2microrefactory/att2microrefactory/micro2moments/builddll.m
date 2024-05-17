@@ -5,15 +5,17 @@ function builddll(target, outputName)
     entryPoint3 = 'micro2shodf';  
 
     % Configuration for generating C++ code as a DLL
-    cfg = coder.config(target);
+   %% Configuration for generating C++ code as a DLL
+    cfg = coder.config('dll');
     cfg.TargetLang = 'C++';
     cfg.GenerateReport = true;
     cfg.LaunchReport = false;
-
-    % Include directories and additional source files
-    cfg.CustomInclude = {' \media\sf_att2microrefactory\micro2moments'};   
-    cfg.CustomSource = {'threadHelper.cpp','dmri_2F1cplus.cpp','hyperGeom2F1.cpp','generateSHMatrix.cpp','sh2hot.cxx','sphericalHarmonics.cpp'};
-    cfg.CustomSourceCode = ['#include "generateSHMatrix.h"'];
+    
+    % Correct usage for CustomInclude and CustomSource with String Arrays
+    cfg.CustomInclude = ["/media/sf_att2microrefactory/att2microrefactory/micro2moments"];
+    cfg.CustomSource = ["threadHelper.cpp", "dmri_2F1cplus.cpp", "hyperGeom2F1.cpp", "generateSHMatrix.cpp", "sh2hot.cxx", "sphericalHarmonics.cpp"];
+    
+    cfg.CustomSourceCode = ["#include 'generateSHMatrix.h'"];
 
     % Load dataset
     load test_data.mat;

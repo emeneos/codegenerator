@@ -1,13 +1,7 @@
-
-
-
-#include "mex.h"
-#include "D:\uvalladolid\DMRIMatlab\mexcode\mathsmex\sphericalHarmonics.cpp"
-#include "D:\uvalladolid\DMRIMatlab\mexcode\mathsmex\sphericalHarmonics.h"
-#include "D:\uvalladolid\DMRIMatlab\mexcode\mathsmex\mexToMathsTypes.h"
-
-#ifdef CODER 
-int test( double* plhs0, double* plhs1, const unsigned int L,  const double* Gi, const unsigned int G_ )
+#include <cstddef>
+#include "sphericalHarmonics.h"
+#include "sh2hot.h"
+int generateSHMatrix( double* plhs0, double* plhs1, const unsigned int L,  const double* Gi, const unsigned int G_ )
 {
     /* make sure the first argument is even */
     if (L != 2 * (L / 2)) {
@@ -54,9 +48,3 @@ int test( double* plhs0, double* plhs1, const unsigned int L,  const double* Gi,
     return 0;
 
 }
-
-#else
-int test( double* plhs0, double* plhs1, const unsigned int L,  const double* Gi, const unsigned int G_ )
-{return 44;
-}
-#endif

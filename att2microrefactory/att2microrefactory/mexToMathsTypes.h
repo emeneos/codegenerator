@@ -3,8 +3,8 @@
  */
 
 #include "float.h"
-#include "C:/Program Files/MATLAB/R2023b/extern/include/tmwtypes.h"
-#include "C:/Program Files/MATLAB/R2023b/extern/include/matrix.h"
+#include "/usr/local/MATLAB/R2023b/extern/include/tmwtypes.h"
+#include "/usr/local/MATLAB/R2023b/extern/include/matrix.h"
 
 // - NOTE: for Mac, we have disabled lpthreads until we find a safe way to
 //         prevent BLAS/LAPACK from using their own inner threads

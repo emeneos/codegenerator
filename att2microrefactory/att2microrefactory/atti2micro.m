@@ -297,8 +297,8 @@ if coder.target('MATLAB')
 
 else
     
-    coder.updateBuildInfo('addSourcePaths','D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments');
-    coder.cinclude('sphericalHarmonics.h');
+    coder.updateBuildInfo('addSourcePaths','/media/sf_att2microrefactory/att2microrefactory/micro2moments');
+    coder.cinclude('/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h');
     coder.updateBuildInfo('addDefines', 'CODER');
     for n=1:Ns % For each shell...
         ptn = abs(ps-n)<1/2;                % Gradients in this shell
