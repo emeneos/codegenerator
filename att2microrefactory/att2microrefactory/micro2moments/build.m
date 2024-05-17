@@ -8,11 +8,12 @@ function build(target)
     cfg = coder.config(target);
 
     cfg.TargetLang = 'C++';
-
-    cfg.CustomSource = ['mexGenerateSHMatrix.cpp']; %using code from the function mexGenerateSHMatrix.cpp
-
-    cfg.CustomInclude='D:\uvalladolid\DMRIMatlab\mexcode\mathsmex'; %adding path where the code from above is
-
+    cfg.GenerateReport = true;
+    cfg.LaunchReport = false;
+    
+    % Correct usage for CustomInclude and CustomSource with String Arrays
+    cfg.CustomInclude = ["/media/sf_att2microrefactory/att2microrefactory/micro2moments"];
+    cfg.CustomSource = ["threadHelper.cpp", "dmri_2F1cplus.cpp", "hyperGeom2F1.cpp", "generateSHMatrix.cpp", "sh2hot.cxx", "sphericalHarmonics.cpp"];
     
     cfg.CustomSourceCode = ['#include "mexGenerateSHMatrix.h"']; %you need a header 
     

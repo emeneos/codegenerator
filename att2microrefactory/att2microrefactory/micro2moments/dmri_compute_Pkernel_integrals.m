@@ -67,9 +67,9 @@ i01       = iota(:,1); % For future use
 % Specify the path to the source file and the header file
 % Define the path to the source file and the header file as compile-time constants
 % Define the paths directly in the coder.updateBuildInfo function calls
-coder.updateBuildInfo('addSourcePaths', 'D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments');
+coder.updateBuildInfo('addSourcePaths', '/media/sf_att2microrefactory/att2microrefactory/micro2moments');
 coder.cinclude('dmri_2F1cplus.h');
-coder.updateBuildInfo('addSourceFiles', 'D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\dmri_2F1cplus.cpp');
+coder.updateBuildInfo('addSourceFiles', '/media/sf_att2microrefactory/att2microrefactory/micro2moments/dmri_2F1cplus.cpp');
 
 
 

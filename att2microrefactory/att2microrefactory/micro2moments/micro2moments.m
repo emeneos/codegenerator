@@ -208,8 +208,8 @@ end
 %end
 % -------------------------------------------------------------------------
 % Effectively compute the moments
-coder.updateBuildInfo('addSourcePaths','D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments');
-coder.cinclude('D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments\sphericalHarmonics.h');
+coder.updateBuildInfo('addSourcePaths','/media/sf_att2microrefactory/att2microrefactory/micro2moments');
+coder.cinclude('/media/sf_att2microrefactory/att2microrefactory/micro2moments/sphericalHarmonics.h');
 coder.cinclude('sphericalHarmonics.h');
 coder.updateBuildInfo('addDefines', 'CODER');
 if(type>0) % Axial or planar

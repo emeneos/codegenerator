@@ -56,7 +56,7 @@ ql0  = lperp./lpar;
 rhos = sqrt(rho);
 %%% -----------------------------------------------------------------------
 % Find the value for n=0:
-coder.updateBuildInfo('addSourcePaths','D:\uvalladolid\matlab\labcode\att2microrefactory\micro2moments');
+coder.updateBuildInfo('addSourcePaths','/media/sf_att2microrefactory/att2microrefactory/micro2moments');
 coder.cinclude('dmri_2F1cplus.h');
 coder.updateBuildInfo('addDefines', 'CODER');
 if(gamma_is_integer)
