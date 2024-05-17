@@ -69,3 +69,5 @@ codegen/
 octave-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/matlab,c++
+
+att2microrefactory/att2microrefactory/test_data.mat

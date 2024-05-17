@@ -9,9 +9,9 @@ function build(target)
 
     cfg.TargetLang = 'C++';
 
-    cfg.CustomSource = ['mexGenerateSHMatrix.cpp']; %using code from the function mexGenerateSHMatrix.cpp
+    cfg.CustomSource = ["mexGenerateSHMatrix.cpp"]; %using code from the function mexGenerateSHMatrix.cpp
 
-    cfg.CustomInclude='D:\uvalladolid\DMRIMatlab\mexcode\mathsmex'; %adding path where the code from above is
+    cfg.CustomInclude="/media/sf_att2microrefactory/att2microrefactory/micro2moments"; %adding path where the code from above is
 
     
     cfg.CustomSourceCode = ['#include "mexGenerateSHMatrix.h"']; %you need a header 
