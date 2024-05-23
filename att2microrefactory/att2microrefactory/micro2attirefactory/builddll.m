@@ -15,7 +15,7 @@ function build(target)
     cfg.CustomInclude = ["/media/sf_att2microrefactory/att2microrefactory/micro2moments"];
     cfg.CustomSource = ["threadHelper.cpp", "dmri_2F1cplus.cpp", "hyperGeom2F1.cpp", "generateSHMatrix.cpp", "sh2hot.cxx", "sphericalHarmonics.cpp"];
     
-    cfg.CustomSourceCode = ["#include 'generateSHMatrix.h'"];
+    cfg.CustomSourceCode = ['#include "generateSHMatrix.h"'];
 
 
 
