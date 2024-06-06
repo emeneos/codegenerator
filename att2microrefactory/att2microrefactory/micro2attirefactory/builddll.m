@@ -1,4 +1,4 @@
-function build(target)
+function builddll(target)
 %build mex or build lib
 
 
