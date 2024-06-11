@@ -49,8 +49,7 @@ bi_ptr = bi.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
 atti_dims = atti.shape[:3]  # This extracts the sizes of the first three dimensions
 lambdapar = np.zeros(atti_dims, dtype=np.float64)
 lambdaperp = np.zeros(atti_dims, dtype=np.float64)
-
-f = np.zeros(188870, dtype=np.float64)
+f = np.zeros(atti_dims, dtype=np.float64)
 
 # Convert numpy arrays to ctypes pointers for outputs
 lambdapar_ptr = lambdapar.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
@@ -84,6 +83,6 @@ atti2micro(atti_ptr, gi_ptr, bi_ptr, ctypes.byref(options_instance),
            lambdapar_ptr, lambdaperp_ptr, f_ptr)
 
 # Output results
-print("Lambdapar:", lambdapar)
-print("Lambdaperp:", lambdaperp)
-print("Fractional anisotropy (f):", f)
+print("Lambdapar:", lambdapar.shape)
+print("Lambdaperp:", lambdaperp.shape)
+print("Fractional anisotropy (f):", f.shape)
