@@ -69,8 +69,7 @@ mask_ptr = mask.ctypes.data_as(ctypes.POINTER(ctypes.c_bool))
 atti_dims = atti.shape[:3]  # This extracts the sizes of the first three dimensions
 lambdapar = np.zeros(atti_dims, dtype=np.float64)
 lambdaperp = np.zeros(atti_dims, dtype=np.float64)
-
-f = np.zeros(188870, dtype=np.float64)
+f = np.zeros(atti_dims, dtype=np.float64)
 
 # Convert numpy arrays to ctypes pointers for outputs
 lambdapar_ptr = lambdapar.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
@@ -104,17 +103,19 @@ atti2micro(atti_ptr, gi_ptr, bi_ptr, ctypes.byref(options_atti2micro),
            lambdapar_ptr, lambdaperp_ptr, f_ptr)
 
 # Output results of atti2micro
-print("Lambdapar:", lambdapar)
-print("Lambdaperp:", lambdaperp)
-print("Fractional anisotropy (f):", f)
+print("Lambdapar:", lambdapar.shape)
+print("Lambdaperp:", lambdaperp.shape)
+print("Fractional anisotropy (f):", f.shape)
 
 # Prepare output array for micro2shodf
-sh_dims = atti.shape[:3] + (15,)  # Example dimensions, adjust as necessary
+L = 8  # Set to the desired SH order
+K = (L + 1) * (L + 2) // 2
+sh_dims = atti.shape[:3] + (K,)  # Correct dimensions for sh
 sh = np.zeros(sh_dims, dtype=np.float64)
 sh_ptr = sh.ctypes.data_as(ctypes.POINTER(ctypes.c_double))
 
 # Initialize options for micro2shodf
-options_micro2shodf = OptionsMicro2Shodf(L=8, lambda_=0.0005, tl=1.0e-6, tu=1-1.0e-6, ADC0=3.0e-3,
+options_micro2shodf = OptionsMicro2Shodf(L=L, lambda_=0.0005, tl=1.0e-6, tu=1-1.0e-6, ADC0=3.0e-3,
                                          optimal=True, mask=mask_ptr, chkmod=True, flperp=0.001,
                                          Flperp=0.999, chunksz=1000, recrop=False, bth=1)
 
@@ -137,4 +138,4 @@ micro2shodf(atti_ptr, gi_ptr, bi_ptr, lambdapar_ptr, lambdaperp_ptr,
             ctypes.byref(options_micro2shodf), sh_ptr)
 
 # Output results of micro2shodf
-print("SH coefficients (sh):", sh)
+print("SH coefficients (sh):", sh.shape)
