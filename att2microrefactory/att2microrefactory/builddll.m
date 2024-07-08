@@ -21,6 +21,7 @@ function builddll(target)
 
        
     load test_data.mat;
+    atti = double(atti);
     T=toc; % This is always a large piece of data
     fprintf(1,'It took %f seconds to load data\n',T);
     
